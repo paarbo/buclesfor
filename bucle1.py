@@ -1,12 +1,12 @@
 num1=int(input("Introduce un numero: "))
 num2=int(input("Introduce otro mayor al anterior: "))
-
+nums=0
 if num1>num2:
     print("No es mayor")
 else:
-    for i in range (num1,num2):
-        aux=i*2
-        if i%2==0:
-            print ("Es par el",i)
+    for n in range (num1,num2+1):
+        nums=n*2
+        if n%2==0:
+            print ("Es par el",n)
         else:
-            print ("Es impar el",i)
+            print ("Es impar el",n)
